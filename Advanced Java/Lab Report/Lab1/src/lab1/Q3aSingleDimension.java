@@ -1,0 +1,18 @@
+package lab1;
+
+public class Q3aSingleDimension {
+    public static void main(String[] args) {
+        int[] arr = new int[15];
+        for (int i = 0; i < 15; i++) {
+            arr[i] = i + 1; // first 15 natural numbers
+        }
+
+        int sum = arr[2] + arr[14]; // sum of 3rd and last element
+        System.out.println("Sum of 3rd and last element: " + sum);
+
+        // Footer
+        System.out.println("\nLab No.: 1");
+        System.out.println("Name: Sulav Adhikari");
+        System.out.println("Roll No: 23081003");
+    }
+}
