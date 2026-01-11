@@ -3,50 +3,41 @@ package lab1;
 import java.util.Scanner;
 
 class Shape {
-    void area() {
-        System.out.println("Area not defined");
+    double area(double x) {
+        return 0;
     }
 }
 
 class Circle extends Shape {
-    double radius;
-    Circle(double radius) { this.radius = radius; }
-    @Override
-    void area() {
-        System.out.println("Circle Area: " + (3.14 * radius * radius));
+    double area(double r) {
+        return 3.14 * r * r;
     }
 }
 
 class Square extends Shape {
-    double side;
-    Square(double side) { this.side = side; }
-    @Override
-    void area() {
-        System.out.println("Square Area: " + (side * side));
+    double area(double s) {
+        return s * s;
     }
 }
 
 public class Q8bRuntimePolymorphism {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
+        Shape s;
 
+        // Circle input
         System.out.print("Enter radius of circle: ");
         double radius = sc.nextDouble();
-        Shape s1 = new Circle(radius);
+        s = new Circle();
+        System.out.println("Area of Circle: " + s.area(radius));
 
+        // Square input
         System.out.print("Enter side of square: ");
         double side = sc.nextDouble();
-        Shape s2 = new Square(side);
+        s = new Square();
+        System.out.println("Area of Square: " + s.area(side));
 
-        // Runtime polymorphism demonstration
-        s1.area();
-        s2.area();
-
-        // Footer
-        System.out.println("\nLab No.: 1");
-        System.out.println("Name: Sulav Adhikari");
-        System.out.println("Roll No: 23081003");
+        System.out.println("Lab1,23081003,Sulav Adhikari");
 
         sc.close();
     }

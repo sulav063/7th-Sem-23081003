@@ -11,8 +11,7 @@ public class Q3aSingleDimension {
         System.out.println("Sum of 3rd and last element: " + sum);
 
         // Footer
-        System.out.println("\nLab No.: 1");
-        System.out.println("Name: Sulav Adhikari");
-        System.out.println("Roll No: 23081003");
+        System.out.println("\nLab1,Sulav Adhikari,23081003");
+
     }
 }

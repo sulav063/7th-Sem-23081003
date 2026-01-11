@@ -14,7 +14,7 @@ public class Q9aStaticNestedClass {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a message for Stathlo"
+        System.out.print("Enter a message for Stat hlo"
                 + "ic Nested Class: ");
         String msg = sc.nextLine();
 

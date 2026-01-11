@@ -45,8 +45,6 @@ public class Lab1Q2Money {
         m3.displayMoney();
 
         // Footer
-        System.out.println("\nLab No.: 1");
-        System.out.println("Name: Sulav Adhikari");
-        System.out.println("Roll No: 23081003");
+        System.out.println("\nLab1,Sulav Adhikari,23081003");
     }
 }

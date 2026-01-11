@@ -34,9 +34,7 @@ public class Q8cAbstractclass {
         t.area();
 
         // Footer
-        System.out.println("\nLab No.: 1");
-        System.out.println("Name: Sulav Adhikari");
-        System.out.println("Roll No: 23081003");
+        System.out.println("\nLab1,23081003,SulavAdhikari");
 
         sc.close();
     }

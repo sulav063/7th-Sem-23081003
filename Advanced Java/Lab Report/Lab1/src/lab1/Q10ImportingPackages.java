@@ -20,8 +20,6 @@ public class Q10ImportingPackages {
         System.out.println("Random number (wildcard import): " + rand.nextInt(100));
 
         // Footer
-        System.out.println("\nLab No.: 1");
-        System.out.println("Name: Sulav Adhikari");
-        System.out.println("Roll No: 23081003");
+        System.out.print("\nLab1,Sulav Adhikari ,2381003");
     }
 }
