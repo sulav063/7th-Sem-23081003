@@ -1,6 +1,6 @@
 package lab1;
 
-class A implements Runnable {
+class MyRunnable implements Runnable {
     @Override
     public void run() {
         System.out.println("Runnable Thread");
@@ -9,9 +9,9 @@ class A implements Runnable {
 
 public class Q13aRunnableThread {
     public static void main(String[] args) throws InterruptedException {
-        Thread t = new Thread(new A());
+        Thread t = new Thread(new MyRunnable());
         t.start();
-        t.join();   // wait for thread to finish
+        t.join();
 
         System.out.print("Lab1, Sulav Adhikari, 2381003");
     }

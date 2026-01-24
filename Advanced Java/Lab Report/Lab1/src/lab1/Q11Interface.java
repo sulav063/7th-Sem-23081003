@@ -1,6 +1,7 @@
 package lab1;
 
 import java.util.Scanner;
+import lab1.Shape;
 
 interface Shape {
     double area(double x, double y);
@@ -8,10 +9,17 @@ interface Shape {
 }
 
 class Rectangle implements Shape {
+
+    // Explicit default constructor
+    public Rectangle() {
+    }
+
+    @Override
     public double area(double l, double b) {
         return l * b;
     }
 
+    @Override
     public double perimeter(double l, double b) {
         return 2 * (l + b);
     }
@@ -31,7 +39,7 @@ public class Q11Interface {
         System.out.println("Area: " + r.area(length, breadth));
         System.out.println("Perimeter: " + r.perimeter(length, breadth));
 
-        System.out.println("\nLab1\n23081003\nSulav Adhikari");
+        System.out.println("\nLab1, 23081003, Sulav Adhikari");
 
         sc.close();
     }

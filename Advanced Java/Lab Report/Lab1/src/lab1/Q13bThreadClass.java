@@ -1,6 +1,6 @@
-package lab1;
+package lab1fresh;
 
-class B extends Thread {
+class MyThread extends Thread {
     @Override
     public void run() {
         System.out.println("Thread Class");
@@ -9,7 +9,7 @@ class B extends Thread {
 
 public class Q13bThreadClass {
     public static void main(String[] args) throws InterruptedException {
-        B t = new B();
+        MyThread t = new MyThread();
         t.start();
         t.join();
 

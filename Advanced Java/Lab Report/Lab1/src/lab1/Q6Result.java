@@ -60,5 +60,6 @@ public class Q6Result extends Test {
         r.readMarks();
         r.calculateTotal();
         r.displayResult();
+            System.out.println("\nLab1, Sulav Adhikari,23081003");
     }
 }

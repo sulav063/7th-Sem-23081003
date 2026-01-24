@@ -25,8 +25,6 @@ public class Q7cMultilevelInheritance {
         C1 obj = new C1(); // shows constructor call order
 
         // Footer
-        System.out.println("\nLab No.: 1");
-        System.out.println("Name: Sulav Adhikari");
-        System.out.println("Roll No: 23081003");
+        System.out.println("\nLab1, Sulav Adhikari,23081003");
     }
 }
