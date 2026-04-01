@@ -7,7 +7,7 @@ public class q31PreparedCRUD {
 
         try {
             Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/lab3db","root","");
+                "jdbc:mysql://localhost:3306/lab3db","root","Mp40awm@#");
 
             // INSERT
             PreparedStatement ps1 = con.prepareStatement(

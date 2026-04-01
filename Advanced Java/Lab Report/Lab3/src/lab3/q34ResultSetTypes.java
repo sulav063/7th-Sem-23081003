@@ -7,7 +7,7 @@ public class q34ResultSetTypes {
 
         try {
             Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/lab3db","root","");
+                "jdbc:mysql://localhost:3306/lab3db","root","Mp40awm@#");
 
             Statement st = con.createStatement(
                 ResultSet.TYPE_SCROLL_INSENSITIVE,

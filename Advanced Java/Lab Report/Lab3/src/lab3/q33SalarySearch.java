@@ -13,7 +13,7 @@ public class q33SalarySearch {
             int id = sc.nextInt();
 
             Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/lab3db","root","");
+                "jdbc:mysql://localhost:3306/lab3db","root","Mp40awm@#");
 
             PreparedStatement ps = con.prepareStatement(
                 "SELECT * FROM salary WHERE emp_id=?");

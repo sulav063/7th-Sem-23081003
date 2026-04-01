@@ -8,7 +8,7 @@ public class q32LoopInsert {
 
         try {
             Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/lab3db","root","");
+                "jdbc:mysql://localhost:3306/lab3db","root","Mp40awm@#");
 
             Scanner sc = new Scanner(System.in);
             String choice;

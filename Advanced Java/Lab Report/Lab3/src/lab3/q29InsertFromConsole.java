@@ -19,7 +19,7 @@ public class q29InsertFromConsole {
             int marks = sc.nextInt();
 
             Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/lab3db","root","");
+                "jdbc:mysql://localhost:3306/lab3db","root","Mp40awm@#");
 
             Statement st = con.createStatement();
 
