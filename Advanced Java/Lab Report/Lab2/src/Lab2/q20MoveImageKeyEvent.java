@@ -6,33 +6,33 @@ import java.awt.event.*;
 public class q20MoveImageKeyEvent {
     public static void main(String[] args) {
 
-        JFrame f = new JFrame("Move");
+        JFrame f = new JFrame();
 
-        JLabel img = new JLabel("O");
-        img.setBounds(100,100,50,50);
+        JLabel img = new JLabel(new ImageIcon("C:\\Users\\Acer\\Downloads\\sulav.jpg"));
+        img.setBounds(100, 100, 100, 100);
 
-        f.addKeyListener(new KeyAdapter(){
-            public void keyPressed(KeyEvent e){
-                int x = img.getX();
-                int y = img.getY();
+        JLabel info = new JLabel("Lab2, Sulav Adhikari, 23081003");
+        info.setBounds(50, 200, 300, 30);
 
-                if(e.getKeyCode()==KeyEvent.VK_LEFT) x-=10;
-                if(e.getKeyCode()==KeyEvent.VK_RIGHT) x+=10;
-                if(e.getKeyCode()==KeyEvent.VK_UP) y-=10;
-                if(e.getKeyCode()==KeyEvent.VK_DOWN) y+=10;
+        f.addKeyListener(new KeyAdapter() {
+            int x = 100, y = 100;
 
-                img.setBounds(x,y,50,50);
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == 37) { x -= 10; System.out.println("Left"); }
+                if (e.getKeyCode() == 39) { x += 10; System.out.println("Right"); }
+                if (e.getKeyCode() == 38) { y -= 10; System.out.println("Up"); }
+                if (e.getKeyCode() == 40) { y += 10; System.out.println("Down"); }
+
+                img.setBounds(x, y, 100, 100);
             }
         });
 
         f.add(img);
-        f.setSize(300,300);
+        f.add(info); // ✅ added
+        f.setSize(400, 400);
         f.setLayout(null);
-        JLabel info = new JLabel("Lab2, Sulav Adhikari, 23081003");
-        info.setBounds(50,200,300,30);
-        f.add(info);
         f.setVisible(true);
-
-        System.out.println("Lab2, Sulav Adhikari, 23081003");
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.requestFocus();
     }
 }

@@ -11,7 +11,7 @@ public class q15AllComponentsGUI {
         f.setLayout(null);
 
         // Label
-        JLabel l = new JLabel("Name: Sulav Adhikari");
+        JLabel l = new JLabel("Lab 2, Sulav Adhikari, 23081003");
         l.setBounds(20, 20, 200, 30);
         f.add(l);
 

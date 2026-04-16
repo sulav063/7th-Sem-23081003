@@ -11,7 +11,7 @@ public class q32LoopInsert {
                 "jdbc:mysql://localhost:3306/lab3db","root","Mp40awm@#");
 
             Scanner sc = new Scanner(System.in);
-            String choice;
+            String choice; 
 
             do {
                 System.out.print("ID: ");
@@ -38,7 +38,7 @@ public class q32LoopInsert {
             } while(choice.equalsIgnoreCase("y"));
 
             con.close();
-
+             System.out.println("Lab3, Sulav Adhikari, 23081003");
         } catch(Exception e){ e.printStackTrace(); }
     }
 }

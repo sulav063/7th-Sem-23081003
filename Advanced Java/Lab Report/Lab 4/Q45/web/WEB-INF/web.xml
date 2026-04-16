@@ -1,0 +1,24 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>q45.SessionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SessionServlet</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CookieReaderServlet</servlet-name>
+        <servlet-class>q45.CookieReaderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CookieReaderServlet</servlet-name>
+        <url-pattern>/cookie</url-pattern>
+    </servlet-mapping>
+
+</web-app>

@@ -27,7 +27,7 @@ public class q35RowSetDemo {
 
             crs.setUrl("jdbc:mysql://localhost:3306/lab3db");
             crs.setUsername("root");
-            crs.setPassword("");
+            crs.setPassword("Mp40awm@#");
 
             crs.setCommand("SELECT * FROM student");
             crs.execute();

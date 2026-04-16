@@ -1,8 +1,4 @@
-package Lab4Network;
-
-// Name: YOUR NAME
-// Roll No: YOUR ROLL NO
-// Lab: Lab4
+ package Lab4Network;
 
 import java.io.*;
 import java.net.*;
@@ -10,22 +6,35 @@ import java.net.*;
 public class Q39_Client {
     public static void main(String[] args) {
 
-        System.out.println("Lab3, Sulav Adhikari, 23081003");
+        System.out.println("Lab4, Sulav Adhikari, 23081003");
 
         try {
-            Socket s = new Socket("localhost",5000);
+            Socket s = new Socket("localhost", 5001);
+
+            BufferedReader userInput = new BufferedReader(
+                    new InputStreamReader(System.in));
+
+            BufferedReader br = new BufferedReader(
+                    new InputStreamReader(s.getInputStream()));
 
             PrintWriter out = new PrintWriter(s.getOutputStream(), true);
-            BufferedReader br = new BufferedReader(
-                new InputStreamReader(s.getInputStream()));
 
-            out.println("Hello Server");
+            String msg;
 
-            System.out.println("Server: " + br.readLine());
+            while (true) {
+                System.out.print("You: ");
+                msg = userInput.readLine();
+                out.println(msg);
+
+                if (msg.equalsIgnoreCase("exit")) break;
+
+                String serverMsg = br.readLine();
+                System.out.println("Server: " + serverMsg);
+            }
 
             s.close();
 
-        } catch(Exception e){
+        } catch (Exception e) {
             System.out.println(e);
         }
     }

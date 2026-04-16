@@ -1,0 +1,14 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>SI</servlet-name>
+        <servlet-class>q43.SI</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SI</servlet-name>
+        <url-pattern>/si</url-pattern>
+    </servlet-mapping>
+
+</web-app>

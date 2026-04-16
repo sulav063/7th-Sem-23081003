@@ -7,7 +7,7 @@ import java.io.*;
 public class q38URLDemo{
 
     public static void main(String[] args) {
-        System.out.println("Lab3, Sulav Adhikari, 23081003");
+        System.out.println("Lab4, Sulav Adhikari, 23081003");
         try {
 
             // -------------------------

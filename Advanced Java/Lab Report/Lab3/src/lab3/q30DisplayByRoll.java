@@ -13,20 +13,38 @@ public class q30DisplayByRoll {
             int roll = sc.nextInt();
 
             Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/lab3db","root","Mp40awm@#");
+                "jdbc:mysql://localhost:3306/lab3db",
+                "root",
+                "Mp40awm@#"
+            );
 
             Statement st = con.createStatement();
 
             ResultSet rs = st.executeQuery(
-                "SELECT * FROM result WHERE roll_no="+roll
+                "SELECT * FROM result WHERE roll_no=" + roll
             );
 
-            while(rs.next()){
-                System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3));
+            boolean found = false;
+
+            while (rs.next()) {
+                found = true;
+                System.out.println(
+                    rs.getInt("roll_no") + " " +
+                    rs.getString("course_name") + " " +
+                    rs.getInt("marks_obtained")
+                );
+            }
+
+            if (!found) {
+                System.out.println("No record found for Roll No: " + roll);
             }
 
             con.close();
 
-        } catch(Exception e){ e.printStackTrace(); }
+            System.out.println("Lab3, Sulav Adhikari, 23081003");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
