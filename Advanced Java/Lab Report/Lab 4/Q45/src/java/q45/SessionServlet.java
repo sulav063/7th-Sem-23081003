@@ -12,17 +12,18 @@ public class SessionServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
+        // Create session
         HttpSession session = request.getSession();
 
-        session.setAttribute("user", "Sulav Adhikari");
+        session.setAttribute("username", "Sulav");
         session.setAttribute("roll", "23081003");
 
         out.println("<html><body>");
-        out.println("<h2>Lab 4 - Sulav Adhikari - 23081003</h2>");
+        out.println("<h2>Session Created ✔</h2>");
 
-        out.println("<h3>Session Created ✔</h3>");
-        out.println("User: " + session.getAttribute("user") + "<br>");
-        out.println("Roll: " + session.getAttribute("roll"));
+        out.println("<h3>Session Data:</h3>");
+        out.println("Username: " + session.getAttribute("username") + "<br>");
+        out.println("Roll: " + session.getAttribute("roll") + "<br>");
 
         out.println("</body></html>");
     }

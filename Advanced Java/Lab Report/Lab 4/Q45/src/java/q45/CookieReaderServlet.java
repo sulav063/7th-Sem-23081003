@@ -12,8 +12,8 @@ public class CookieReaderServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        // ⭐ CREATE COOKIES
-        Cookie c1 = new Cookie("name", "Sulav Adhikari");
+        // ✅ CREATE COOKIES (NO SPACE!)
+        Cookie c1 = new Cookie("name", "Sulav_Adhikari");
         Cookie c2 = new Cookie("roll", "23081003");
 
         response.addCookie(c1);
@@ -24,13 +24,13 @@ public class CookieReaderServlet extends HttpServlet {
 
         out.println("<h3>Cookie Created ✔</h3>");
 
-        // ⭐ READ COOKIES
+        // ✅ READ COOKIES
         Cookie[] cookies = request.getCookies();
 
         out.println("<h3>Reading Cookies:</h3>");
 
-        if(cookies != null){
-            for(Cookie c : cookies){
+        if (cookies != null) {
+            for (Cookie c : cookies) {
                 out.println(c.getName() + " = " + c.getValue() + "<br>");
             }
         } else {

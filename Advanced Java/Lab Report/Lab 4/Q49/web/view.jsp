@@ -8,7 +8,7 @@
 <tr>
     <th>ID</th>
     <th>Name</th>
-</tr>
+</tr> 
 
 <%
 try {
